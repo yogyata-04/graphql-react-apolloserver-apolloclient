@@ -1,0 +1,12 @@
+{
+  "name": "graphql-react-apolloserver-apolloclient",
+  "version": "1.0.0",
+  "description": "- graphql\r - react\r - apollo server\r - apollo client",
+  "main": "server.js", 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
