@@ -1,0 +1,4 @@
+- graphql
+- react
+- apollo server
+- apollo client
