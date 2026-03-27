@@ -1,0 +1,49 @@
+query getAllUsers{
+  users{
+    id,
+    name,
+    password,
+    posts{
+        id,
+        description,
+        url
+    }
+  }
+}
+
+query getAllPosts{
+    posts{
+        id,
+        title,
+        description,
+        url
+    }
+}
+
+query getUserById{
+  user(id:"2"){
+    id
+    name
+    posts{
+      title
+      description
+    }    
+  }
+}
+
+
+----GENERIC QUERY----
+query getUserById($userId:ID!){
+  user(id:$userId){
+    id
+    name
+		posts{
+      title
+      description
+    }    
+  }
+}
+
+(THIS IS NOW DYNAMIC QUERY AND WE NOW JUST NEED TO CHANGE QUERY VARIABLES)
+
+A query variable is a way to pass dynamic values into a GraphQL query instead of hardcoding them.
